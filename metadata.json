@@ -1,0 +1,6 @@
+{
+  "name": "Fortinet Backlink Performance Dashboard",
+  "description": "An interactive dashboard to visualize and analyze backlink performance, keyword rankings, and page authority changes over time, based on GSC and MOZ data.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

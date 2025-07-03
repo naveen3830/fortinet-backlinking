@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fortinet Backlink Performance Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#da291c', // Fortinet Red
+              'dark-grey': '#646464',
+              'medium-grey': '#969696',
+              'light-grey': '#f0f0f0',
+              'extra-dark-grey': '#464646',
+              'red-tint': '#fbe9e8', // Custom tint
+              
+              'text-dark': '#464646',
+              'text-medium': '#646464',
+              'text-light': '#969696',
+
+              positive: '#464646', // Using extra-dark-grey for positive text
+              negative: '#da291c', // Using primary red for negative text
+              neutral: '#969696',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "chart": "https://esm.sh/chart@^0.1.2",
+    "chart.js": "https://esm.sh/chart.js@^4.5.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light-grey min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
